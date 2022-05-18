@@ -5,7 +5,7 @@
 
 Data is from Daniel Castañeda-Mogollón et al. Dec 2021 https://www.sciencedirect.com/science/article/pii/S1386653221002924
 
-Samples (either Nasopharyngeal or Throat swabs) from 125 patients, either COVID+ or COVID- by PCR, were subjected to Illumina sequencing (one RNA and one DNA sequencing run for each patient).
+Samples (either Nasopharyngeal or Throat swabs) from 125 patients, either COVID+ or COVID- by RT-PCR, were subjected to Illumina sequencing (one RNA and one DNA sequencing run for each patient).
 
 ### Aim of the re-analysis
 
@@ -30,6 +30,8 @@ Because of their large size, the original raw FASTQ sequence files will be exclu
 ### Initial data
  - the raw sample metadata annotation file (downloaded from SRA below) is in ```data/SraRunTable.csv```
  - a copy of the Castañeda-Mogollón et al. paper is in ```docs/Castaneda-Mogollon_et_al_J_Clinical_Vir_Dec_2021.pdf```
+ - a copy of the supplementary figures are in ```Castaneda-Mogollon_et_al_J_Clinical_Vir_Dec_2021_supp_figs.pdf```
+ - a copy of the supplementary material & methods are in ```Castaneda-Mogollon_et_al_J_Clinical_Vir_Dec_2021_supp_mat_and_meth.pdf```
  
 ### Organisation of the collaborative analysis
 - the raw sequencing files archived at the NCBI SRA https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJEB47870 will be downloaded in ```data/```
@@ -38,3 +40,10 @@ Because of their large size, the original raw FASTQ sequence files will be exclu
   - table ```users``` will hold the list of course participants (field ```username``` is your IFB account login)
   - samples to users dispatch to be made in table ```sample2user```
 
+### References
+ - publication in Journal of Clinical Virology, Volume 145, December 2021: https://www.sciencedirect.com/science/article/pii/S1386653221002924
+ - referenced papers on the "spiked primer enrichment" technique (nothing to do with the SC2 Spike protein...): 
+   - https://www.nature.com/articles/s41564-019-0637-9
+   - preprint applied to SC2: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7217139/
+   - with a corresponding "open reproducible protocol": https://www.protocols.io/view/sars-cov-2-enrichment-sequencing-by-spiked-primer-261geowedl47/v4
+ - paper describing the "IDSeq" (now morphed into https://czid.org/) metagenomic analysis protocol (used in the 2021 J. of Clinical Virol): https://academic.oup.com/gigascience/article/9/10/giaa111/5918865?login=true
