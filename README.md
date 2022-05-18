@@ -20,15 +20,19 @@ Each course participant is in charge of a subset of the 250 total samples sequen
 
 ### Structure of the shared repository
 
- - ```data``` contains the original data from Castañeda-Mogollón (**read only**, ie no modifications to be made!)
- - ```docs``` contains documentation (eg Jupyter notebooks, papers etc.)
- - ```scripts``` will contain any scripts used in the analysis workflow (eg SLURM bash scripts)
+ - ```data``` contains the original data from Castañeda-Mogollón (**read only**, ie file contents not to be modified!)
+ - ```docs``` contains documentation (eg papers, manuals etc.)
+ - ```scripts``` will contain any scripts used in the analysis workflow (eg  Jupyter notebooks, SLURM bash scripts)
  - ```analyses``` will contain results of the analyses, such as transformed datasets, output files, and figures
  
-Because of their large size, the original raw FASTQ sequence files will be excluded from git tracking via the .gitignore file. This is reproducible-friendly because these FASTQ raw files will be considered strictly read only, and therefore can be re-instanciated simply by executing the download commands that will be documented in the bash jupyter notebooks.
+Because of their large size, the original raw FASTQ sequence files will be excluded from git tracking via the .gitignore file. This is reproducible-friendly because these FASTQ raw files will be considered strictly read only, and therefore can be re-instanciated simply by executing the download commands that will be documented in the scripts & notebooks.
  
 ### Initial data
- - the raw sample metadata annotation file (downloaded from SRA below) is in ```data/SraRunTable.csv```
+ - the NCBI raw sample metadata annotation file (downloaded from [NCBI SRA](https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJEB47870)) is in ```data/SraRunTable.csv```
+ - the EBI ENA sample metadata annotation file (downloaded from [EBI ENA](https://www.ebi.ac.uk/ena/browser/view/PRJEB47870?show=reads)) is in ```data/filereport_read_run_PRJEB47870.tsv```
+ - RT-PCR Ct (cycle threshold) values (obtained by contacting the authors by email) are in ```data/ct_values_covid19_metagenomics.xlsx```
+ - IDseq (see ref below) processing metadata for 5'/forward reads (obtained by contacting the authors by email) are in ```data/sample_overviews 5.csv```
+ - IDseq (see ref below) processing metadata for 3'/reverse reads (obtained by contacting the authors by email) are in ```data/sample_overviews 3.csv```
  - a copy of the Castañeda-Mogollón et al. paper is in ```docs/Castaneda-Mogollon_et_al_J_Clinical_Vir_Dec_2021.pdf```
  - a copy of the supplementary figures are in ```Castaneda-Mogollon_et_al_J_Clinical_Vir_Dec_2021_supp_figs.pdf```
  - a copy of the supplementary material & methods are in ```Castaneda-Mogollon_et_al_J_Clinical_Vir_Dec_2021_supp_mat_and_meth.pdf```
@@ -36,8 +40,10 @@ Because of their large size, the original raw FASTQ sequence files will be exclu
 ### Organisation of the collaborative analysis
 - the raw sequencing files archived at the NCBI SRA https://trace.ncbi.nlm.nih.gov/Traces/study/?acc=PRJEB47870 will be downloaded in ```data/```
 - data needed to collaborate will be stored in the SQLite database in ```analyses/sample_collab.db```
-  - table ```samples``` is a direct DB import of ```data/SraRunTable.csv```
-  - table ```users``` will hold the list of course participants (field ```username``` is your IFB account login)
+  - table ```SraRunTable``` is a direct DB import of ```data/SraRunTable.csv```
+  - table ```sample_overviews``` is a direct DB import of concatenated files ```data/sample_overviews 5.csv``` plus ```data/sample_overviews 3.csv```
+  - table ```ct_values``` is a direct DB import of ```data/ct_values_covid19_metagenomics.xlsx```
+  - table ```users``` will hold the list of course participants (field ```username``` is your **IFB account login**)
   - samples to users dispatch to be made in table ```sample2user```
 
 ### References
