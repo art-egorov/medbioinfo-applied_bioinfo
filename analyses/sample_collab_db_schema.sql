@@ -95,7 +95,7 @@ CREATE TABLE IF NOT EXISTS "SampleOverviews"(
   "sample_type" TEXT,
   "nucleotide_type" TEXT,
   "collection_location" TEXT,
-  "blinded_patient_code" TEXT
+  "patient_code" TEXT
 );
 
 CREATE INDEX index_SampleOverviews_blinded_patient_code ON SampleOverviews(blinded_patient_code);
@@ -175,9 +175,9 @@ CREATE TABLE IF NOT EXISTS "bioinformaticians"(
 
 CREATE TABLE IF NOT EXISTS "sample2bioinformatician"(
   "username" TEXT NOT NULL,
-  "blinded_patient_code" TEXT NOT NULL,
+  "patient_code" TEXT NOT NULL,
   PRIMARY KEY (username, blinded_patient_code)
 );
-CREATE INDEX index_sample2bioinformatician_blinded_patient_code ON sample2bioinformatician(blinded_patient_code);
+CREATE INDEX index_sample2bioinformatician_patient_code ON sample2bioinformatician(patient_code);
 CREATE INDEX index_sample2bioinformatician_username ON sample2bioinformatician(username);
 
