@@ -178,6 +178,6 @@ CREATE TABLE IF NOT EXISTS "sample2bioinformatician"(
   "patient_code" TEXT NOT NULL,
   PRIMARY KEY (username, patient_code)
 );
-CREATE INDEX index_sample2bioinformatician_patient_code ON sample2bioinformatician(patient_code);
+CREATE UNIQUE INDEX index_sample2bioinformatician_patient_code ON sample2bioinformatician(patient_code);
 CREATE INDEX index_sample2bioinformatician_username ON sample2bioinformatician(username);
 
