@@ -167,8 +167,17 @@ CREATE UNIQUE INDEX index_ENARunTable_secondary_sample_accession ON ENARunTable(
 CREATE UNIQUE INDEX index_ENARunTable_experiment_accession ON ENARunTable(experiment_accession);
 CREATE UNIQUE INDEX index_ENARunTable_sample_alias ON ENARunTable(sample_alias);
 
-CREATE TABLE IF NOT EXISTS "CtValues"(
-  "Blinded_number" TEXT NOT NULL PRIMARY KEY,
-  "Ct" REAL
+CREATE TABLE IF NOT EXISTS "bioinformaticians"(
+  "username" TEXT NOT NULL PRIMARY KEY,
+  "firstname" TEXT NOT NULL,
+  "lastname" TEXT NOT NULL
 );
-CREATE INDEX index_CtValues_Ct ON CtValues(Ct);
+
+CREATE TABLE IF NOT EXISTS "sample2bioinformatician"(
+  "username" TEXT NOT NULL PRIMARY KEY,
+  "blinded_patient_code" TEXT NOT NULL,
+  PRIMARY KEY (username, blinded_patient_code),
+);
+CREATE INDEX index_sample2bioinformatician_blinded_patient_code ON sample2bioinformatician(blinded_patient_code);
+CREATE INDEX index_sample2bioinformatician_username ON sample2bioinformatician(username);
+
