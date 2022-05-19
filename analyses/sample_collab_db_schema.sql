@@ -176,7 +176,7 @@ CREATE TABLE IF NOT EXISTS "bioinformaticians"(
 CREATE TABLE IF NOT EXISTS "sample2bioinformatician"(
   "username" TEXT NOT NULL,
   "blinded_patient_code" TEXT NOT NULL,
-  PRIMARY KEY (username, blinded_patient_code),
+  PRIMARY KEY (username, blinded_patient_code)
 );
 CREATE INDEX index_sample2bioinformatician_blinded_patient_code ON sample2bioinformatician(blinded_patient_code);
 CREATE INDEX index_sample2bioinformatician_username ON sample2bioinformatician(username);
