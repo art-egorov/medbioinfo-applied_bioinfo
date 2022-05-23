@@ -1,4 +1,6 @@
-data/*.fastq.gz
-data/*.sra
+*.fastq.gz
+*.fastq
+*.fasta
+*.sra
 .ipynb_checkpoints
 
