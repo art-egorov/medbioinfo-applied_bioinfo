@@ -1,0 +1,114 @@
+srun: job 23007317 queued and waiting for resources
+srun: job 23007317 has been allocated resources
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+97845 reads; of these:
+  97845 (100.00%) were unpaired; of these:
+    95284 (97.38%) aligned 0 times
+    2318 (2.37%) aligned exactly 1 time
+    243 (0.25%) aligned >1 times
+2.62% overall alignment rate
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+73240 reads; of these:
+  73240 (100.00%) were unpaired; of these:
+    67516 (92.18%) aligned 0 times
+    5248 (7.17%) aligned exactly 1 time
+    476 (0.65%) aligned >1 times
+7.82% overall alignment rate
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+142788 reads; of these:
+  142788 (100.00%) were unpaired; of these:
+    134891 (94.47%) aligned 0 times
+    7044 (4.93%) aligned exactly 1 time
+    853 (0.60%) aligned >1 times
+5.53% overall alignment rate
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+1050257 reads; of these:
+  1050257 (100.00%) were unpaired; of these:
+    1020307 (97.15%) aligned 0 times
+    9370 (0.89%) aligned exactly 1 time
+    20580 (1.96%) aligned >1 times
+2.85% overall alignment rate
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+1092488 reads; of these:
+  1092488 (100.00%) were unpaired; of these:
+    979158 (89.63%) aligned 0 times
+    9329 (0.85%) aligned exactly 1 time
+    104001 (9.52%) aligned >1 times
+10.37% overall alignment rate
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+657107 reads; of these:
+  657107 (100.00%) were unpaired; of these:
+    649214 (98.80%) aligned 0 times
+    6670 (1.02%) aligned exactly 1 time
+    1223 (0.19%) aligned >1 times
+1.20% overall alignment rate
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+633128 reads; of these:
+  633128 (100.00%) were unpaired; of these:
+    619458 (97.84%) aligned 0 times
+    11487 (1.81%) aligned exactly 1 time
+    2183 (0.34%) aligned >1 times
+2.16% overall alignment rate
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+1419935 reads; of these:
+  1419935 (100.00%) were unpaired; of these:
+    1207246 (85.02%) aligned 0 times
+    6776 (0.48%) aligned exactly 1 time
+    205913 (14.50%) aligned >1 times
+14.98% overall alignment rate
