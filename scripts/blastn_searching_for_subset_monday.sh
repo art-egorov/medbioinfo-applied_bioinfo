@@ -26,14 +26,10 @@ module load blast
 mkdir -p ${workdir}/data/blastn_output      # -p because it creates all required dir levels **and** doesn't throw an error if the dir exists :)
 cd ${workdir}
 
-for k in 1 100 1000 
-do 
-echo "${k}"
-done
 
 for i in 10 100 1000 
 do 
- blastn -db ${blastn_database}  -query ${query_files}_${i}.fa -out ./data/blastn_output/${i}_results
+srun blastn -num_threads ${SLURM_CPUS_PER_TASK} -evalue 10 -perc_identity 70 -db ${blastn_database}  -query ${query_files}_${i}.fa -out ./data/blastn_output/${i}_results
 done
  
 
