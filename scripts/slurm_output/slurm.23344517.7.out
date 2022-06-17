@@ -1,0 +1,21 @@
+START: Wed Jun 15 16:22:18 CEST 2022
+ERR6913190
+ >> Checking for Valid Options...
+ >> Running Bracken 
+      >> python src/est_abundance.py -i ./data/kraken2_reports/ERR6913190.report -o ./data/bracken_output/ERR6913190_res.tsv -k /shared/projects/form_2022_19/kraken2/arch_bact_vir_hum_protoz_fung/database50mers.kmer_distrib -l S -t 5
+PROGRAM START TIME: 06-15-2022 14:25:12
+BRACKEN SUMMARY (Kraken report: ./data/kraken2_reports/ERR6913190.report)
+    >>> Threshold: 5 
+    >>> Number of species in sample: 4303 
+	  >> Number of species with reads > threshold: 1631 
+	  >> Number of species with reads < threshold: 2672 
+    >>> Total reads in sample: 1106044
+	  >> Total reads kept at species level (reads > threshold): 680870
+	  >> Total reads discarded (species reads < threshold): 5436
+	  >> Reads distributed: 747087
+	  >> Reads not distributed (eg. no species above threshold): 5850
+	  >> Unclassified reads: 353107
+BRACKEN OUTPUT PRODUCED: ./data/bracken_output/ERR6913190_res.tsv
+PROGRAM END TIME: 06-15-2022 14:25:12
+  Bracken complete.
+END: Wed Jun 15 16:25:12 CEST 2022

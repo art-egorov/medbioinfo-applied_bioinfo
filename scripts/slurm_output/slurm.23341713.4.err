@@ -1,0 +1,12 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Loading database information... done.
+1196413 sequences (316.62 Mbp) processed in 31.965s (2245.7 Kseq/m, 594.32 Mbp/m).
+  864435 sequences classified (72.25%)
+  331978 sequences unclassified (27.75%)

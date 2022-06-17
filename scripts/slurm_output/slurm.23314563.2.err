@@ -1,0 +1,2 @@
+/var/spool/slurm/slurmd/job23314565/slurm_script: line 35: seqkit: command not found
+BLAST query error: CFastaReader: Near line 1, there's a line that doesn't look like plausible data, but it's not marked as defline or comment.

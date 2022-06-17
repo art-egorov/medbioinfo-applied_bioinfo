@@ -1,0 +1,12 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Loading database information... done.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 23344237 ON cpu-node-67 CANCELLED AT 2022-06-15T15:59:17 ***
+slurmstepd: error: *** STEP 23344237.0 ON cpu-node-67 CANCELLED AT 2022-06-15T15:59:18 ***

@@ -1,0 +1,13 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Loading database information... done.
+1069874 sequences (273.45 Mbp) processed in 38.324s (1675.0 Kseq/m, 428.10 Mbp/m).
+  935693 sequences classified (87.46%)
+  134181 sequences unclassified (12.54%)
+>> Checking report file: ./data/kraken2_reports/ERR6913303.report
